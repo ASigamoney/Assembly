@@ -1,0 +1,770 @@
+Exercises
+1.1.1.(1) What is the total width of the fields illustrated in Figure 1 on page 12?
+8 bytes
+1.2.1.(1) If R1 has value 9, what register is referenced by GR R1?
+Any register
+2.1.1.(1)+ Determine the decimal value of the following binary numbers: 
+(a) B'000010110',
+0 X 2**0 =  0
+1 X 2**1 =  2
+1 X 2**2 =  4
+0 X 2**3 =  0
+1 X 2**4 = 16
+		   22
+(b) B'000101100',
+0 X 2**0 =  0
+0 X 2**1 =  0
+1 X 2**2 =  4
+1 X 2**3 =  8
+0 X 2**4 =  0
+1 X 2**5 = 32
+		   44
+(c) B'10101010', 
+0 X 2**0 =   0
+1 X 2**1 =   2
+0 X 2**2 =   0
+1 X 2**3 =   8
+0 X 2**4 =   0
+1 X 2**5 =  32
+0 X 2**6 =   0
+1 X 2**7 = 128
+		   170
+
+(d) B'1111111'.
+1 X 2**0 =   1
+1 X 2**1 =   2
+1 X 2**2 =   4
+1 X 2**3 =   8
+1 X 2**4 =  16
+1 X 2**5 =  32
+1 X 2**6 =  64
+		   127
+
+2.1.2.(1)+ Suppose a binary number is represented by a single 1-bit followed by a string of n
+zero bits (100...00). What is its value? = 1
+2.1.3.(2) Suppose a binary number is represented by a string of n one bits (111...11). What is
+its value? **n - 1
+
+2.2.1.(1) Convert the following hexadecimal numbers to binary: 
+(a) X'A' = 10, 
+(b) X'2B' = 2 X 16**1 + 11 X 16**0 = 32 + 11 = 43, 
+(c) X'3E8' = 3 X 16**2 =768 + 14 X 16**1 = 244 + 8 X 16**0 = 8: 768 + 224 + 8 = 1000
+
+2.2.2.(1) Make a table similar to Table 1 on page 18 showing binary, decimal, and octal (base
+8) values.
+Table 1. Binary, decimal, 
+hexadecimal and Octal
+Binary  Decimal		Hex		Octal
+0000 	0 			0		0
+0001 	1 			1		1
+0010 	2 			2		2	
+0011 	3 			3		3
+0100 	4 			4		4
+0101 	5 			5		5
+0110 	6 			6		6
+0111 	7 			7		7
+1000 	8 			8		10
+1001 	9 			9		11
+1010 	10 			A		12
+1011 	11 			B		13
+1100 	12 			C		14
+1101 	13 			D		15
+1110 	14 			E   	16
+1111 	15 			F		17
+
+001 110
+1 X 2**2 =   4
+1 X 2**1 =   2
+0 X 2**0 = 	 0
+			 6
+001 101
+1 X 2**2 = 4
+0 X 2**1 = 0
+1 X 2**0 = 1
+
+001 100
+1 X 2**2 = 4
+0 X 2**1 = 0
+0 X 2**0 = 0
+
+001 011
+0 X 2**2 = 0
+1 X 2**1 = 2
+1 X 2**0 = 1
+
+001 010
+0 X 2**2 = 0
+1 X 2**1 = 2
+0 X 2**0 = 0
+
+001 001
+0 X 2**2 = 0
+0 X 2**1 = 0
+1 X 2**0 = 1
+
+001 000 = 10
+000 111
+1 X 2**2 = 4
+1 X 2**1 = 2
+1 X 2**0 = 1
+
+
+2.2.3.(2) In grouping bits to form hex digits, why can't we start at the left? That is, why do we
+begin grouping at the radix point? 
+The incorect alignment produce incorrect values that we do not align from left 
+2.2.4.(2)+ Create addition and multiplication tables for single hexadecimal digits.
+2.2.5.(1) Convert the following octal numbers to hexadecimal:
+
+1. 21474
+21474		
+1	*	4 =	4
+8	*	7 =	56
+64	*	4 =	256
+512	*	1 =	512
+4096 *	2 =	8192
+Decimal		9020
+Convert to Hexadecimal
+9020 /	16	563 reainder	12
+563	 /	16	35	reainder	3
+35	 / 	16	2	reainder	3
+2	 /	16	0	reainder	2
+Hexadecimal			233C
+
+2. 77777
+77777			
+			
+7	1		7	
+7	8		56	
+7	64		448	
+7	512		3584	
+7	4096	28672	
+Decimal		32767	
+			
+32767	16	2047	15
+2047	16	127		15
+127		16	7		15
+7		16	0		7
+Hexadecimal			7FFF
+
+3. 1750
+1750				
+				
+0	1	0		
+5	8	40		
+7	64	448		
+1	512	512		
+				
+Decimal		1000		
+				
+1000	16	62	8	8
+62		16	3	14	E
+3		16	0	3	3
+Hexadecimal	    	3E8	
+
+4. 60341303
+			
+3	1		3	
+0	8		0	
+3	64		192	
+1	512		512	
+4	4096	16384	
+3	32768	98304	
+0	262144	0	
+6	2097152	12582912	
+			12698307			
+			
+Decimal		12698307	
+			
+12698307	16	793644	3
+793644		16	49602	12
+49602		16	3100	2
+3100		16	193		12
+193			16	12		1
+12			16	0		12
+Hexadecimal			C1C2C3
+
+5. 4631
+4631			
+			
+1	1	1	
+3	8	24	
+6	64	384	
+4	512	2048
+		2457	
+			
+			
+Decimal		2457
+2457	16	153	9
+153		16	9	9
+9		16	0	9
+
+Hexadecimal	999
+
+2.2.6.(3) You may have noticed that the characters in many cartoons and comics have only four
+fingers. To help them with “cartoon arithmetic”, create base-8 (octal) addition and multiplication
+tables.
+
+Sure! Below is the addition table for octal (base 8) values, which range from 0 to 7.
+
+### Octal Addition Table
+
++ |	0	1	2	3	4	5	6	7
+----------------------------------------
+0 |	0	1	2	3	4	5	6	7
+1 |	1	2	3	4	5	6	7	10
+2 |	2	3	4	5	6	7	10	11
+3 |	3	4	5	6	7	10	11	12
+4 |	4	5	6	7	10	11	12	13
+5 |	5	6	7	10	11	12	13	14
+6 |	6	7	10	11	12	13	14	15
+7 |	7	10	11	12	13	14	15	16
+
+### Explanation:
+
+- Each cell in the table represents the sum of the row number and the column number.
+for instance: 
+2 + 6 = 8 decimal
+8 / 8 = 1 remainder 0
+1 / 8 = 0 remainder 1
+Decimal 8 = Octal 10
+
+Decimal 10 = Octal 12
+
+###Octal Multiplication table
+X |	0	1	2	3	4	5	6	7
+-------------------------------------
+0 |	0	0	0	0	0	0	0	0
+1 |	0	1	2	3	4	5	6	7
+2 |	0	2	4	6	10	12	14	16
+3 |	0	3	6	11	14	17	22	25
+4 |	0	4	10	14	20	24	30	34
+5 |	0	5	12	17	24	31	36	43
+6 |	0	6	14	22	30	36	44	52
+7 |	0	7	16	25	34	43	52	61
+
+Each cell in the table represents the product of the row number and the column number.
+The results are displayed in octal notation.
+For instance:
+
+3 X 3 = 9 Decimal
+9 / 8 = 1 remainder 1
+1 / 8 = 0 remainder 1
+Decimal 9 = Octal 11 
+
+2.3.1.(2)+ Convert these numbers from the given base to the new bases.
+1. 26293 (base 10) to bases 2, 4, 8, and 16.
+Base2
+Binary Base 2		Quaternary Base 4	Octal Base 8		Hexadecimal base 16			
+26293	2	1		26293	4	1		26293	8	5		26293	16	5	5
+13146	2	0		6573	4	1		3286	8	6		1643	16	11	B
+6573	2	1		1643	4	3		410		8	2		102		16	6	6
+3286	2	0		410		4	2		51		8	3		6		16	6	6
+1643	2	1		102		4	2		6		8	6		0		16	0	0
+821		2	1		25		4	1		0		8	0		0		16	0	0
+410		2	0		6		4	2		0		8	0		0		16	0	0
+205		2	1		1		4	1		0		8	0		0		16	0	0
+102		2	0		0		0	0		0		8	0		0		16	0	0
+51		2	1		0		0	0		0		8	0		0		16	0	0
+25		2	1		0		0	0		0		8	0		0		16	0	0
+12		2	0		0		0	0		0		8	0		0		16	0	0
+6		2	0		0		0	0		0		8	0		0		16	0	0
+3		2	1		0		0	0		0		8	0		0		16	0	0
+1		2	1		0		0	0		0		8	0		0		16	0	0
+															
+110011010110101		000000012122311		000000000063265		0000000000066B5	
+
+2. X'2FACED' (base 16) to bases 10 and 2.
+HEXADECIMAL	x	2	F	A	C	E	D
+				2	15	10	12	14	13
+Base 10
+13	1		13
+14	16		224
+12	256		3072
+10	4096	40960
+15	65536	983040
+2	1048576	2097152
+Decimal		3124461
+
+Base 2 Binary (See table)
+0010 1111 1010 1100 1110 1101
+				
+3. X'BABEF00D' (base 16) to bases 10 and 8.
+Base 10 Decimal
+11	268435456	2952790016
+10	16777216	167772160
+11	1048576		11534336
+14	65536		917504
+15	4096		61440
+0	256			0
+0	16			0
+13	1			13
+				3133075469
+
+Octal base 	8
+Octal Base 	8		
+3133075469	8	5
+391634433	8	1
+48954304	8	0
+6119288		8	0
+764911		8	7
+95613		8	5
+11951		8	7
+1493		8	5
+186			8	2
+23			8	7
+2			8	2
+
+27257570015
+
+
+4. X'C0FFEE' (base 16) to bases 10 and 2.
+Decimal base 10
+14	1048576	14680064
+14	65536	917504
+15	4096	61440
+15	256		3840
+0	16		0
+12	1		12
+		
+		15662860
+
+Octal Base 8		
+15662860	8	4
+1957857		8	1
+244732		8	4
+30591		8	7
+3823		8	7
+477			8	5
+59			8	3
+7			8	7
+
+2.3.2.(2) Convert the following to decimal.
+1. X'7FFFFFFF'
+7	F	F	F	F	F	F	F	'
+7	15	15	15	15	15	15	15	
+1879048192	251658240	15728640	983040	61440	3840	240	15	
+Decimal value: 2147483647.
+
+2. X'C1C2C3'
+
+12	1048576	12582912
+1	65536	65536
+12	4096	49152
+2	256		512
+12	16		192
+3	1		3
+		
+Decimal value: 12698307
+
+
+3. X'4040405C' (This digit pattern will reappear in other forms!)
+4	0	4	0	4	0	5	C	'
+4	0	4	0	4	0	5	12	
+1073741824	0	4194304	0	16384	0	80	12	1077952604
+
+2.3.3.(3) Make a table of the hexadecimal values of the squares of the integers from 1 to 32.
+0	0	
+1		1		1
+2		4		4
+3		9		9
+4		16		10
+5		25		19
+6		36		24
+7		49		31
+8		64		40
+9		81		51
+10		100		64
+11		121		79
+12		144		90
+13		169		A9
+14		196		C4
+15		225		E1
+16		256		100
+17		289		121
+18		324		141
+19		361		169
+20		400		190
+21		441		1B9
+22		484		1E4
+23		529		219
+24		576		240
+25		625		271
+26		676		2A4
+27		729		2DB
+28		784		320
+29		841		349
+30		900		384
+31		961		3C1
+32		1024	400
+
+
+2.3.4.(2)+ Convert the following hexadecimal numbers to decimal.
+1. X'257'
+X'257'	2		5		7	
+		512		80		7	599
+
+2. X'7FFA'
+ X'7FFA'	7		15		15		10	
+			28672	3840	240		10	32762
+
+3. X'8008'
+X'8008'		8		0	0	8	
+			32768	0	0	8	32776
+
+4. X'E000'
+X'E000'		14		0	0	0	
+			57344	0	0	0	57344
+
+5. X'FFFA'
+ X'FFFA'	15		15		15	10	
+			61440	3840	240	10	65530
+
+6. X'E1010'
+X'E1010'	14		1		0	1	0	
+			57344	4096	0	16	1	61457
+
+2.3.5.(3) Suppose we must convert a number from its representation in base A to its representation
+in base B. In which base will it be most convenient to do the arithmetic involved in the
+conversion? How does the result depend on the base used for the conversion?
+2.3.6.(2) Convert these octal (base 8) numbers to base 10: (a) 5061, (b) 257, (c) 192. Work
+carefully!
+Octal	Decimal
+5061	2609
+257		175
+192		Invalid
+Octal uses 0-7 only	9 not valid octal number.
+
+2.3.7.(2) What decimal values are represented by the binary numbers 9K, 5M, and 2G?
+5 kilobytes, 5 megabytes, 2 gigabytes
+9 000, 5 000 000, 2 000 000 000 bytes.
+
+2.6.1.(2)+ Give the decimal value of the following hexadecimal numbers in the logical representation:
+1. X'DEADBEEF'
+2. X'FFFFFFFF'
+3. X'DEC0DED1'
+
+X'DEADBEEF'	X	'	D			E			A			D		B		E		E		F	'
+					13			14			10			13		11		14		14		15	
+					3489660928	234881024	10485760	851968	45056	3584	224		15	3735928559
+X'FFFFFFFF'	X	'	F			F			F			F		F		F		F		F	'
+					15			15			15			15		15		15		15		15	
+					4026531840	251658240	15728640	983040	61440	3840	240		15	4294967295
+ X'DEC0DED1'	X	'	D			E			C			0	D		E		D		1	'
+						13			14			12			0	13		14		13		1	
+						3489660928	234881024	12582912	0	53248	3584	208		1	3737181905
+						
+						
+2.7.1.(3) Convert X'AB0DE' to base 15, using hexadecimal arithmetic throughout.						
+X'AB0DE'+O82B82:B82:O90	X	'				A		B		0	D		E	
+											10		11		0	13		14	
+											655360	45056	0	208		14	700638
+			Numerator	Dominator	Remainder	Base 15				
+			700638		46709		3			3					
+			46709		3113		14			E					
+			3113		207			8			8					
+			207			13			12			C					
+			13			0			13			D					
+											
+			X'AB0DE' = DC8E3 (Base 15)
+			
+2.7.2.(3) We saw that the radix-complement representation of a number Y in radix r with n
+digits is
+rn+Y (modulo rn)
+Suppose r=10 and n=4. Show the ten's-complement representation of the following values,
+and indicate which are and are not validly representable.
+(1) +729, (2) −729, (3) −1, (4) +9999, (5) −5000, (6) +5000, (7) −9999.
+
+To find the ten's-complement representation of the specified values using \( r = 10 \) and \( n = 4 \) (i.e., we're dealing with 4-digit numbers), we need to apply the formula:
+\[
+r^n + Y \mod r^n
+\]
+The maximum value representable with 4 digits in base 10 is \( 9999 \) (which is \( 10^4 - 1 \)), meaning valid values must lie between \( -9999 \) and \( +9999 \).
+
+The ten's-complement of a number \( Y \) effectively represents \( -Y \) in a system that allows for both positive and negative values. Specifically, the representation of \( Y \) (if positive) will yield the ten's-complement representation of \( -Y \).
+
+We will calculate the ten's-complement representation of each number. For any positive \( Y \), the result will be \( 10^4 - Y \). 
+
+Let's proceed with the calculations:
+
+### 1. **Value: +729**
+**Calculation:**  
+\[
+10^4 + 729 \mod 10^4 = 10000 + 729 \mod 10000 = 729
+\]  
+**Representation:** Since +729 is directly representable, and its ten's-complement representation is \( 10000 - 729 = 9271 \).
+
+**Validly Representable:** Yes.
+
+---
+
+### 2. **Value: −729**
+**Calculation:**  
+\[
+10^4 + (-729) \mod 10^4 = 10000 - 729 = 9271
+\]  
+**Representation:** The ten's-complement of -729 is \( 9271\).
+
+**Validly Representable:** Yes.
+
+---
+
+### 3. **Value: −1**
+**Calculation:**  
+\[
+10^4 + (-1) \mod 10^4 = 10000 - 1 = 9999
+\]  
+**Representation:** The ten's-complement representation of -1 is \( 9999 \).
+
+**Validly Representable:** Yes.
+
+---
+
+### 4. **Value: +9999**
+**Calculation:**  
+\[
+10^4 + 9999 \mod 10^4 = 10000 + 9999 = 19999 \mod 10000 = 9999
+\]  
+**Representation:** +9999 is representable, while its ten's-complement representation is \( 10000 - 9999 = 0001 \).
+
+**Validly Representable:** Yes.
+
+---
+
+### 5. **Value: −5000**
+**Calculation:**  
+\[
+10^4 + (-5000) \mod 10^4 = 10000 - 5000 = 5000
+\]  
+**Representation:** The ten's-complement of -5000 is \( 5000\).
+
+**Validly Representable:** Yes.
+
+---
+
+### 6. **Value: +5000**
+**Calculation:**  
+\[
+10^4 + 5000 \mod 10^4 = 10000 + 5000 = 15000 \mod 10000 = 5000
+\]  
+**Representation:** +5000 is validly representable, while its ten's-complement representation is \( 10000 - 5000 = 5000 \).
+
+**Validly Representable:** Yes.
+
+---
+
+### 7. **Value: −9999**
+**Calculation:**  
+\[
+10^4 + (-9999) \mod 10^4 = 10000 - 9999 = 1
+\]  
+**Representation:** The ten's-complement of -9999 is \( 0001 \).
+
+**Validly Representable:** Yes.
+
+---
+
+### Summary:
+
+- **+729**: Ten's-complement representation: **9271**; **Valid**.
+- **−729**: Ten's-complement representation: **9271**; **Valid**.
+- **−1**: Ten's-complement representation: **9999**; **Valid**.
+- **+9999**: Ten's-complement representation: **0001**; **Valid**.
+- **−5000**: Ten's-complement representation: **5000**; **Valid**.
+- **+5000**: Ten's-complement representation: **5000**; **Valid**.
+- **−9999**: Ten's-complement representation: **0001**; **Valid**.
+
+In conclusion, all the values provided in this exercise are validly representable in a four-digit ten's-complement representation in base 10.
+
+
+
+2.7.3.(2) What is the decimal value of the 12-bit binary number 100000000001 in a signed two's
+complement representation?
+100000000001 - The most significant bit = 1. Therefore the number is negative.
+Invert the binary number and add 1
+100000000001
+011111111110 + 000000000001 = 011111111111
+Convert to decimal, base 10
+11111111111	0	1		1		1		1		1		1		1		1		1		1
+2^			11	10		9		8		7		6		5		4		3		2		1
+			0	1024	512		256		128		64		32		16		8		4		2 = 2047
+Add negative sign as origional number was negative -2047
+
+2.7.4.(3) Based on your results of Exercise 2.7.3, give an expression for the value of the n-bit
+binary number 10000...000001 in a signed two's complement representation.
+In signed two's complement representation, the n-bit binary number with the pattern \( 10000\ldots00001 \) (where there is one '1' at the beginning, followed by \( n-2 \) zeros, and a '1' at the end) can be analyzed as follows. This binary number can be expressed in decimal terms.
+
+### Understanding the Binary Number \( 10000\l....000001 \)
+
+1. **Structure of the Number**: 
+   - The binary representation \( 10000\l....000001 \) in an n-bit system has the first bit as 1 (which indicates it is negative in two's complement) and the last bit as 1.
+   - For example, in a 12-bit representation, this number would be:
+     - \( 100000000001 \) (for n=12, the first and last bits are 1).
+
+2. **Finding its Integer Representation**:
+   - The binary number \( 10000\l....000001 \) has a value of \( 2^{n-1} + 1 \).
+   - For instance, in decimal (for n=12): 
+     \[
+     2^{11} + 1 = 2048 + 1 = 2049.
+     \]
+
+3. **Using Two's Complement**:
+   - In n-bit two's complement, a number that is represented with a leading '1' (meaning it's negative) actually corresponds to negative values.
+   - To find its value in signed two's complement, we use the relation for negative numbers:
+     \[
+     - (2^{n-1} + 1)
+     \]
+   - Therefore, the value for our number \( 10000\ldots000001 \) is:
+     \[
+     - (2^{n-1} + 1).
+     \]
+
+### Expression for the Value in the Given Form
+
+Using the given expression \( r^n + Y \mod r^n \), we take \( r = 2 \) (since we’re working with binary numbers), and we denote \( Y \) as the representation of the number in two's complement:
+
+Thus, we have:
+\[
+Y = - (2^{n-1} + 1).
+\]
+And since our modulus is \( r^n = 2^n \), we can rewrite:
+
+\[
+Y + 2^n = - (2^{n-1} + 1) + 2^n = 2^n - 2^{n-1} - 1.
+\]
+This expression represents the value of the n-bit number \( 10000\ldots000001 \) in the specified modular arithmetic sense.
+
+### Final Expression
+
+Combining everything, we have:
+\[
+\text{Value of } 10000...000001 \text{ in signed two's complement representation} = (2^n - 2^{n-1} - 1) \mod 2^n.
+\]
+
+In summary, the final representation of the n-bit binary number \( 10000\ldots000001 \) in signed two's complement representation can be expressed as:
+\[
+(2^n - 2^{n-1} - 1) \mod 2^n.
+\]
+
+
+
+2.7.5.(3)+ Knowing the logical representation of the three numbers in Exercise 2.6.1, convert
+them to their signed decimal representation.
+
+To convert the hexadecimal numbers \( X'DEADBEEF' \), \( X'FFFFFFFF' \), and \( X'DEC0DED1' \) into their signed decimal representations, we first need to understand how to convert from hexadecimal to decimal, and then how to interpret these values in regards to signed representation (typically considering two's complement for signed integers).
+
+### Step 1: Convert Hexadecimal to Decimal
+
+1. **Hexadecimal \( X'DEADBEEF' \)**:
+   - DEADBEEF in binary is:
+     - D = 1101
+     - E = 1110
+     - A = 1010
+     - D = 1101
+     - B = 1011
+     - E = 1110
+     - E = 1110
+     - F = 1111
+   - Therefore, \( DEADBEEF_{16} = 11011110101011011011111011101111_{2} \).
+   - In decimal:
+     \[
+     DEADBEEF = 13 \cdot 16^7 + 14 \cdot 16^6 + 10 \cdot 16^5 + 13 \cdot 16^4 + 11 \cdot 16^3 + 14 \cdot 16^2 + 14 \cdot 16^1 + 15 \cdot 16^0 = 3735928559.
+     \]
+
+2. **Hexadecimal \( X'FFFFFFFF' \)**:
+   - FFFFFF in binary is:
+     - F = 1111 (repeated 8 times)
+   - Thus, \( FFFFFFFF_{16} = 11111111111111111111111111111111_{2} \).
+   - In decimal:
+     \[
+     FFFFFFFF = 15 \cdot 16^7 + 15 \cdot 16^6 + 15 \cdot 16^5 + 15 \cdot 16^4 + 15 \cdot 16^3 + 15 \cdot 16^2 + 15 \cdot 16^1 + 15 \cdot 16^0 = 4294967295.
+     \]
+
+3. **Hexadecimal \( X'DEC0DED1' \)**:
+   - DEC0DED1 in binary is:
+     - D = 1101
+     - E = 1110
+     - C = 1100
+     - 0 = 0000
+     - D = 1101
+     - E = 1110
+     - D = 1101
+     - 1 = 0001
+   - Therefore, \( DEC0DED1_{16} = 11011110000011011101111011010001_{2} \).
+   - In decimal:
+     \[
+     DEC0DED1 = 13 \cdot 16^7 + 14 \cdot 16^6 + 12 \cdot 16^5 + 0 \cdot 16^4 + 13 \cdot 16^3 + 14 \cdot 16^2 + 13 \cdot 16^1 + 1 \cdot 16^0 = 3735923841.
+     \]
+
+### Step 2: Interpret as Signed Values
+
+1. **For \( X'DEADBEEF' \) (3735928559)**:
+   - If we assume this is a 32-bit number:
+   - The most significant bit (MSB) is `1`, which indicates it's a negative number in two's complement:
+   - To find the signed representation:
+     \[
+     3735928559 - 2^{32} = 3735928559 - 4294967296 = -553648128.
+     \]
+   - Therefore, **signed value is -553648128**.
+
+2. **For \( X'FFFFFFFF' \) (4294967295)**:
+   - This value also has its MSB as `1` in 32 bits, thus it's a negative number:
+   - Calculate the representation:
+     \[
+     4294967295 - 2^{32} = 4294967295 - 4294967296 = -1.
+     \]
+   - Therefore, **signed value is -1**.
+
+3. **For \( X'DEC0DED1' \) (3735923841)**:
+   - Again, the MSB is `1`, indicating it is a negative number:
+   - Calculate the signed representation:
+     \[
+     3735923841 - 2^{32} = 3735923841 - 4294967296 = -553648385.
+     \]
+   - Therefore, **signed value is -553648385**.
+
+### Summary of Signed Decimal Representations
+
+- \( X'DEADBEEF' \) → **-553648128**
+- \( X'FFFFFFFF' \) → **-1**
+- \( X'DEC0DED1' \) → **-553648385**
+
+2.8.1.(1) Why does the simple two-step prescription for computing complements given above
+not depend on the sign of the number being complemented?
+
+In summary, the reason the simple two-step prescription for computing two's complements does not 
+depend on the sign of the number being complemented lies in the binary arithmetic principles and 
+the properties of two's complement representation. The process is uniform and systematic, 
+establishing a direct correspondence between any binary number and its negative, making it applicable 
+to all binary integers without exception.
+
+2.8.2.(2)+ Give the decimal values represented by each of the following 16-bit numbers,
+assuming that the binary values are in two's complement representation:
+1. X'0257'
+2. X'7FFA'
+3. X'8008'
+4. X'E000'
+5. X'FFFA'
+
+Binary  Decimal		Hex		Octal
+0000 	0 			0		0
+0001 	1 			1		1
+0010 	2 			2		2	
+0011 	3 			3		3
+0100 	4 			4		4
+0101 	5 			5		5
+0110 	6 			6		6
+0111 	7 			7		7
+1000 	8 			8		10
+1001 	9 			9		11
+1010 	10 			A		12
+1011 	11 			B		13
+1100 	12 			C		14
+1101 	13 			D		15
+1110 	14 			E   	16
+1111 	15 			F		17
+
+2. X'7FFA'
+0111111111111010	0	1	1	1	1	1	1	1	1	1	1	1	1	0	1	0
+	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
+	0	16384	8192	4096	2048	1024	512	256	128	64	32	16	8	0	2	0
+																32762
